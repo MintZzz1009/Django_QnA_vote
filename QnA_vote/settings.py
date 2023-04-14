@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',    # 추가
+    'books',
+    # 'books.apps.BooksConfig', 대신 등록해도 되는 것.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
