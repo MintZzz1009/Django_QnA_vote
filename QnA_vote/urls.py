@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #추가
     path('polls/', include('polls.urls')),
-    
+    path('bookd/', include('books.urls')),
 ]
