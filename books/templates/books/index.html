@@ -1,9 +1,12 @@
 {% extends 'base_books.html' %} {% block content %}
 <h2>Books Management System</h2>
 <ul>
-    {% for modelname in model_list %} {% with urlvar =
-    'books:'|add:modelname|lower|add:'_list' %}
-    <li><a href="{% url urlvar %}">{{ modelname }}</a></li>
-    {% endwith %} {% endfor %}
+    {% for modelname in model_list %}
+    <li>
+        {% with urlvar='books:'|add:modelname|lower|add:'_list' %}
+        <a href="{% url urlvar %}">{{ modelname }}</a>
+        {% endwith %}
+    </li>
+    {% endfor %}
 </ul>
 {% endblock content %}
